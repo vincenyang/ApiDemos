@@ -93,6 +93,7 @@ public class ApiDemos extends ListActivity {
                     addItem(myData, nextLabel, activityIntent(
                             info.activityInfo.applicationInfo.packageName,
                             info.activityInfo.name));
+                    
                 } else {
                     if (entries.get(nextLabel) == null) {
                         addItem(myData, nextLabel, browseIntent(prefix.equals("") ? nextLabel : prefix + "/" + nextLabel));
